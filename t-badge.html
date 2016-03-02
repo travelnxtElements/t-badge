@@ -1,5 +1,15 @@
 <link rel="import" href="../polymer/polymer.html">
+<!--
+    `t-badge` is a badge component which gives an UI like a ribbon with a message in it.
 
+Example:
+    <t-badge label="something"></t-badge>
+### Styling
+  
+  * {
+    --badge-bg : #f18722
+  }
+-->
 <dom-module id="t-badge">
     <template>
         <style>
@@ -37,6 +47,10 @@ Polymer({
     is: 't-badge',
 
     properties: {
+
+      /**
+       * Set the text inside the badge with the property
+       */
     	label:String
     }
 
